@@ -2,6 +2,7 @@
     {{- range . }}
     <a href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me" title="{{ (.title | default .name) | title }}">
         {{ partial "svg.html" . }}
+        <span>{{ (.title | default .name) | title }}</span>
     </a>
     {{- end }}
 </div>

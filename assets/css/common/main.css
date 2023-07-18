@@ -31,13 +31,22 @@
     padding: 12px 0;
 }
 
-.social-icons a:not(:last-of-type) {
-    margin-inline-end: 12px;
+.social-icons a {
+    border: 1px solid var(--border);
+    display: flex;
+    margin: 12px 0;
+    padding: 12px;
+    transition: .2s background-color;
+}
+
+.social-icons a:hover {
+    background-color: var(--tertiary);
 }
 
 .social-icons a svg {
     height: 26px;
     width: 26px;
+    margin-right: 12px;
 }
 
 code {
